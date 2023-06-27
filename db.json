@@ -1,0 +1,149 @@
+{
+  "networkProducts": [
+    {
+      "id": 1,
+      "name": "Router",
+      "brand": "Cisco",
+      "model": "RV260W",
+      "price": 149.99,
+      "description": "Wireless VPN Router",
+      "image": "https://example.com/router.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Switch",
+      "brand": "Netgear",
+      "model": "GS108",
+      "price": 49.99,
+      "description": "8-Port Gigabit Ethernet Switch",
+      "image": "https://example.com/switch.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Access Point",
+      "brand": "Ubiquiti",
+      "model": "UAP-AC-LR",
+      "price": 99.99,
+      "description": "Long-Range Access Point",
+      "image": "https://example.com/access-point.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Firewall",
+      "brand": "Fortinet",
+      "model": "FortiGate 60F",
+      "price": 599.99,
+      "description": "Enterprise Firewall Appliance",
+      "image": "https://example.com/firewall.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ethernet Cable",
+      "brand": "Monoprice",
+      "model": "Cat6",
+      "price": 9.99,
+      "description": "Category 6 Ethernet Cable, 5ft",
+      "image": "https://example.com/ethernet-cable.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Wireless Access Point",
+      "brand": "TP-Link",
+      "model": "EAP225",
+      "price": 79.99,
+      "description": "Dual-Band Gigabit Ceiling Mount Access Point",
+      "image": "https://example.com/access-point2.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Network Switch",
+      "brand": "D-Link",
+      "model": "DGS-1024D",
+      "price": 89.99,
+      "description": "24-Port Gigabit Ethernet Switch",
+      "image": "https://example.com/switch2.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Wireless Router",
+      "brand": "ASUS",
+      "model": "RT-AC68U",
+      "price": 149.99,
+      "description": "Dual-Band Wireless-AC1900 Gigabit Router",
+      "image": "https://example.com/router2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Network Firewall",
+      "brand": "Sophos",
+      "model": "XG 106",
+      "price": 799.99,
+      "description": "Enterprise Firewall Security Appliance",
+      "image": "https://example.com/firewall2.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Ethernet Patch Panel",
+      "brand": "Tripp Lite",
+      "model": "N252-048",
+      "price": 99.99,
+      "description": "48-Port Cat6 Patch Panel",
+      "image": "https://example.com/patch-panel.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Network Attached Storage",
+      "brand": "Synology",
+      "model": "DS218+",
+      "price": 349.99,
+      "description": "2-Bay NAS DiskStation",
+      "image": "https://example.com/nas1.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Powerline Adapter",
+      "brand": "NETGEAR",
+      "model": "PLP2000",
+      "price": 79.99,
+      "description": "2000Mbps Gigabit Ethernet Powerline Adapter",
+      "image": "https://example.com/powerline1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Network Security Appliance",
+      "brand": "Fortinet",
+      "model": "FortiGate 60E",
+      "price": 599.99,
+      "description": "Enterprise Firewall and VPN Gateway",
+      "image": "https://example.com/fortigate1.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Wireless Range Extender",
+      "brand": "Linksys",
+      "model": "RE7000",
+      "price": 99.99,
+      "description": "AC1900 Gigabit Wi-Fi Range Extender",
+      "image": "https://example.com/range-extender1.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Network Cable Tester",
+      "brand": "Fluke Networks",
+      "model": "MicroScanner2",
+      "price": 249.99,
+      "description": "Ethernet Network Cable Verifier",
+      "image": "https://example.com/cable-tester1.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "",
+      "email": "",
+      "password": "",
+      "posts": [],
+      "comments": []
+    }
+  ]
+}
