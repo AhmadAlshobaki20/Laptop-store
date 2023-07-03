@@ -19,7 +19,6 @@ function ShowComment({ postId }) {
   const comments = postComments.map((comment, index) => {
     return (
       <div key={index}>
-
         <div>User: {comment.user}</div>
         <div>Content: {comment.content}</div>
       </div>
@@ -29,7 +28,7 @@ function ShowComment({ postId }) {
   return (
     <div>
       <h2>Comments:</h2>
-      <div>User: {currentUser}</div>
+      <div>User:{currentUser}</div>
       {comments}
     </div>
   );

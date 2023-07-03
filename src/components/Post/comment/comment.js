@@ -13,7 +13,7 @@ function Comment({ postId }) {
   const { HandelAddComment, currentUser } = useContext(allData);
 
   const handleCommentChange = (event) => {
-    setComment({ ...comment, user:"ahmad", content: event.target.value });
+    setComment({ ...comment, content: event.target.value });
   };
 
   useEffect(() => {

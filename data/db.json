@@ -231,40 +231,5 @@
     }
   ],
   "Posts": [
-    {
-      "content": "hII",
-      "Author": "ahmad",
-      "comment": [
-        {
-          "content": "AHMAD"
-        },
-        {
-          "content": "Ali"
-        },
-        {
-          "content": "aaaa"
-        },
-        {
-          "content": ",a,lal"
-        },
-        {
-          "content": "dsadas"
-        },
-        {
-          "content": "AAALDSADASKDASDCas"
-        },
-        {
-          "content": "dsadasd"
-        },
-        {
-          "content": ""
-        },
-        {
-          "user": "ahmad",
-          "content": "dsadasdas"
-        }
-      ],
-      "id": 1
-    }
   ]
 }
