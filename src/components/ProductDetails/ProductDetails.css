@@ -1,0 +1,21 @@
+.product-details {
+  display: flex;
+  border: 1px solid rgb(207, 206, 206);
+  border-radius: 8px;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#detail h1 {
+  font-family: var(--nav-font-family);
+  color: var(--logo-color);
+}
+
+#detail p {
+  font-family: var(--nav-font-family);
+  font-weight: 600;
+  font-size: 1.1rem;
+}

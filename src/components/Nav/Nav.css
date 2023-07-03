@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  font-family: var(--nav-font-family);
+  position: sticky;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+
+/* Nav bar */
+nav ul{
+  list-style: none;
+  display: flex;
+  gap:20px ;
+}
+ul li {
+  text-decoration: none;  
+  font-weight: 500;
+  font-family: var(--nav-font-family);
+  position: relative;
+}
+ul li::after{
+  content: "";
+  width: 0;
+  height: 1px;
+  background: black;
+  position: absolute;
+  transition: all 500ms ease;
+  top:0;
+  right: 0;
+}
+ul li::before{
+  content: "";
+  width: 0;
+  height: 1px;
+  background: black;
+  position: absolute;
+  transition: all 500ms ease;
+  bottom:0;
+  left: 0;
+}
+ul li:hover::before{
+  width: 100%;
+}
+ul li:hover::after{
+  width: 100%;
+}
+
+
+ul li:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-list{
+  text-decoration: none;
+  color: black;
+}
+.nav-list:hover{
+  text-decoration: none;
+  color: black;
+  color: var(--btn-hover); 
+}
+
+
+/* Logo */
+.logo{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.logo #first-part{
+  color: var(--logo-color)
+}
+
+/* login button */
+.login{
+  background: rgb(248, 248, 248);
+  padding: 5px;
+  border: 1px solid rgb(183, 183, 183);
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(138, 138, 138);
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+}.login:hover{
+  box-shadow: 0 0 1px 1px rgb(0, 0, 0);
+  background: var(--btn-hover);
+}
+
+@media only screen and (max-width: 650px) {
+  nav{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+}

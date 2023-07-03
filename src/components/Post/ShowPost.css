@@ -1,0 +1,44 @@
+.posts{
+  display: flex;
+  flex-direction: column;
+  /* background: black; */
+  padding: 10px;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  justify-content: center;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  /* background: black; */
+  padding: 10px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* delete, Edit */
+.actions{
+  display: flex;
+  gap:10px;
+}
+
+#delete:hover{
+  fill: red;
+  color: red;
+}
+#edit{
+  width: 40px;
+  font-weight: 600;
+}
+.ui.card {
+  width: 776px;
+}
+.user-image{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#time-name{
+  display: flex;
+  justify-content: space-between;
+}

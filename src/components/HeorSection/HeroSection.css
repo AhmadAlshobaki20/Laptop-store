@@ -1,0 +1,28 @@
+main{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+  font-family: var(--nav-font-family);
+  height: 400px;
+  width: 80%;
+  margin: 0 auto; 
+  background: var(--login-Hero-color);
+  margin-bottom: 20px;
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 8px;
+}
+.Welcome-editorial{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.Welcome-editorial h1{
+  font-size: 3rem;
+  color: var(--logo-color);
+}
+.Hero-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

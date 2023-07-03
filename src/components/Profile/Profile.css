@@ -1,0 +1,121 @@
+#caption-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  grid-row:1/1;
+  color: var(--logo-color);
+  font-size: 2rem;
+}
+
+.Profile-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  font-family: var(--nav-font-family);
+  padding: 10px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+/* user-information */
+.image-section {
+  grid-column: 2/4;
+  grid-row: 2/-1;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+.details-section {
+  grid-column: 5/-1;
+  grid-row: 2/3;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  height: fit-content;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.caption-contact-info{
+
+  color: rgb(55, 55, 55);
+}
+.contact-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(39, 39, 39);
+}
+.contact-info h3 span{
+  color: var(--logo-color);
+}
+.Basic-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* feedback section */
+.wrap-feedback-show {
+  grid-column: 5/-1;
+  grid-row: 3/-1;
+  font-size: 1.2rem;
+}
+
+#feedback-caption{
+  display: flex;
+  justify-content: center;
+  color: var(--logo-color);
+}
+
+.wrap-feedback-show .inner-wrap {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 5px;
+  border-radius: 4px;
+}.sitting-feedback{
+  display: flex;
+  justify-content: end;
+  gap:5px;
+}.sitting-feedback button{
+  width: 80px;
+  padding: 5px 0;
+}button{
+  height: 30px;
+  width:90px;
+  border-radius: 4px;
+  border: 1px solid rgb(183, 183, 183);
+  background: rgb(248, 248, 248);
+  color: black;
+  transition: all 200ms ease;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(156, 156, 156);
+}
+button:hover{
+  background: var(--logo-color);
+  box-shadow: 0px 0px 1px 1px rgb(156, 156, 156);
+}
+.third-section{
+  display: flex;
+  gap: 10px;  
+}
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+}

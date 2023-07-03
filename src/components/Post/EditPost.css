@@ -1,0 +1,20 @@
+.edit-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: self-end;
+}
+#input-edit{
+  width: 150px;
+  height:35px;
+  border-radius: 0;
+}
+
+#edit-btn{
+  width: 50px;
+  height: 32px;
+  border-radius: 0;
+  border: 0;
+}

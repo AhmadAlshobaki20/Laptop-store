@@ -1,0 +1,39 @@
+.Reputaetion{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.Reputaetion div{
+  width: 250px;
+  height: 120px;
+  border: 1px solid black;
+  background: var(--logo-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+#title-Reputation{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 20px;
+  color: var(--logo-color);
+  font-family: var(--nav-font-family);
+}
+.reputation-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  /* font-weight: 600; */
+  font-family: var(--nav-font-family);
+  cursor: pointer;
+  transition: all 1s ease ;
+}.reputation-card:hover{
+  background: var(--login-color);
+}

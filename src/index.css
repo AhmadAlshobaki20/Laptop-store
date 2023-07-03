@@ -1,13 +1,34 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Dancing+Script&family=Dosis&family=Inter&family=Nunito&family=Pacifico&family=Poppins:ital@0;1&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --logo-color: rgb(65 131 196);
+  --btn-hover: rgb(65 131 196);
+  --nav-font-family: "Nunito", sans-serif;
+  --login-background-color: rgb(252, 252, 252);
+  --login-Hero-color: rgb(255, 255, 255);
+  --login-color: rgb(255, 255, 255);
+  --footer-btn-color: #5775d7;
+
 }
+
+body {
+  /* border-right: 1px solid rgb(224, 224, 224);  */
+  /* border: 1px solid rgb(224, 224, 224); */
+  width: 90%;
+  margin: 0 auto;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  /*justify-content: space-between; */
+  color: rgb(90, 90, 90);
+}
+

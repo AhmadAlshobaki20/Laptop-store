@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* logo inside the footer */
+.logo{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.logo #first-part{
+  color: var(--logo-color)
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  font-family: var(--nav-font-family);
+  border-top: 1px solid rgb(131, 131, 131);
+  border-right: 1px solid rgb(131, 131, 131);
+  border-left: 1px solid rgb(131, 131, 131);
+  padding: 20px;
+}
+/* left-side */
+.left-side-section{
+  display: grid;
+}
+.left-side-section h1{
+  font-size: 0.7rem;
+}
+.blue-sec{
+  color: var(--logo-color);
+  font-size: 0.8rem;
+}
+/* middle section */
+.middle-side-section{
+  display: grid;
+  gap:5px;
+}
+.middle-side-section h1{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* right-side  */
+.right-side-section{
+  display: grid;
+}
+#new-letter{
+  font-size: 1rem;
+}
+#social{
+  font-size: 1rem;
+}
+
+.subscribe input{
+  height: 30px;
+  border-radius: 4px;
+  border: 1px rgb(166, 166, 166) solid;
+}
+.subscribe button{
+  height: 30px;
+  width:90px;
+  border-radius: 4px;
+  border: 1px solid rgb(183, 183, 183);
+  background: rgb(248, 248, 248);
+  color: black;
+  transition: all 200ms ease;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(156, 156, 156);
+}
+.subscribe button:hover{
+  background: var(--logo-color);
+  box-shadow: 0px 0px 1px 1px rgb(156, 156, 156);
+}
+.social-media{
+  display: grid;
+  gap: 5px;
+}
+.icons i{
+  margin-right: 5px;
+}
+.extend{
+  width: 80%;
+  margin: 0 auto;
+  background: var(--logo-color);
+  height:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#h1{
+  margin-top: auto ;
+}
+@media only screen and (max-width: 650px) {
+  footer{
+    display: grid;
+    gap:20px;
+  }
+  .left-side-section{
+    gap: 10px;
+  }
+  .middle-side-section{
+    display: flex;
+    gap:10px;  
+  
+  }
+}
+@media only screen and (max-width: 450px) {
+  footer{
+    display: grid;
+    gap:20px;
+  }
+  .left-side-section{
+    gap: 10px;
+  }
+  .middle-side-section{
+    display: flex;
+    gap:10px;  
+  
+  }
+  .right-side-section input, 
+  .right-side-section button,
+  .right-side-section #new-letter{   
+    display: none;
+  }.right-side-section .social-media{
+    display: grid;
+    place-items: center;
+  }
+
+}

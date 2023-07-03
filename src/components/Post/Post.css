@@ -1,0 +1,23 @@
+.view{
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+.post-area{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgb(191, 191, 191);
+}
+.post-textArea{
+  max-width: 100%;
+  width: 50%;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: scroll;
+}
+.post-form{
+  display: flex;
+  align-items: center;
+}
