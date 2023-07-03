@@ -209,16 +209,8 @@
       "gender": "Male",
       "posts": [
         {
-          "content": "adas",
-          "time": "2023-07-03T16:54:13.231Z"
-        },
-        {
-          "content": "dasdas",
-          "time": "2023-07-03T16:54:47.048Z"
-        },
-        {
-          "content": "dsadas",
-          "time": "2023-07-03T17:23:51.578Z"
+          "content": "hII",
+          "time": "2023-07-03T23:19:30.569Z"
         }
       ],
       "comments": [],
@@ -226,78 +218,53 @@
       "id": 1
     },
     {
-      "email": "layth@gmail.com",
-      "password": "Ahmad@aya123",
-      "confirmPassword": "Ahmad@aya123",
-      "phone": "0787023312123",
-      "name": "layth",
-      "gender": "Male",
-      "posts": [
-        {
-          "content": "dasda",
-          "time": "2023-07-03T16:52:26.754Z"
-        },
-        {
-          "content": "dsad",
-          "time": "2023-07-03T16:53:02.344Z"
-        }
-      ],
-      "comments": [],
-      "feedback": [],
-      "id": 2
-    },
-    {
-      "email": "ali@gmial.com",
+      "email": "ali@gmail.com",
       "password": "Ahmad@aya123",
       "confirmPassword": "Ahmad@aya123",
       "phone": "0787014262",
-      "name": "Ali",
+      "name": "ali",
       "gender": "Male",
-      "posts": [
-        {
-          "content": "ahms",
-          "time": "2023-07-03T16:56:11.214Z"
-        },
-        {
-          "content": "xZ",
-          "time": "2023-07-03T16:56:25.847Z"
-        }
-      ],
+      "posts": [],
       "comments": [],
       "feedback": [],
-      "id": 3
+      "id": 2
     }
   ],
   "Posts": [
     {
-      "content": "dasda",
-      "Author": "layth",
+      "content": "hII",
+      "Author": "ahmad",
+      "comment": [
+        {
+          "content": "AHMAD"
+        },
+        {
+          "content": "Ali"
+        },
+        {
+          "content": "aaaa"
+        },
+        {
+          "content": ",a,lal"
+        },
+        {
+          "content": "dsadas"
+        },
+        {
+          "content": "AAALDSADASKDASDCas"
+        },
+        {
+          "content": "dsadasd"
+        },
+        {
+          "content": ""
+        },
+        {
+          "user": "ahmad",
+          "content": "dsadasdas"
+        }
+      ],
       "id": 1
-    },
-    {
-      "content": "dsad",
-      "Author": "layth",
-      "id": 2
-    },
-    {
-      "content": "dasdas",
-      "Author": "ahmad",
-      "id": 3
-    },
-    {
-      "content": "ahms",
-      "Author": "Ali",
-      "id": 4
-    },
-    {
-      "content": "xZ",
-      "Author": "Ali",
-      "id": 5
-    },
-    {
-      "content": "dsadas",
-      "Author": "ahmad",
-      "id": 6
     }
   ]
 }

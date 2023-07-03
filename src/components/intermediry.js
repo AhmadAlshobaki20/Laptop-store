@@ -13,7 +13,7 @@ import Register from "./registreation/Register";
 import Login from "./login/Login";
 import Community from "./Community/Community";
 import Post from './Post/Post';
-import Comment from "./Comment/Comment";
+import Comment from "./Post/comment/comment";
 import ListPost from "./Post/ListPost";
 import ShowPost from './Post/showPost';
 import ProductDetails from './ProductDetails/ProductDetails';

@@ -1,17 +1,37 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import allData from "../../context/context";
+import axios from "axios";
 
-function ShowComment() {
-  const { commentArray } = useContext(allData);
+function ShowComment({ postId }) {
+  const { currentUser } = useContext(allData);
+  const [postComments, setPostComments] = useState([]);
 
-  const comments = commentArray.map((com) => {
-    return <div><div>{com.user.name}</div><div>{com.content}</div></div>;
+  useEffect(() => {
+    getPostComments();
+  }, []);
+
+  const getPostComments = () => {
+    axios.get(`http://localhost:5001/Posts/${postId}`).then((response) => {
+      setPostComments(response.data.comment);
+    });
+  };
+
+  const comments = postComments.map((comment, index) => {
+    return (
+      <div key={index}>
+
+        <div>User: {comment.user}</div>
+        <div>Content: {comment.content}</div>
+      </div>
+    );
   });
 
   return (
-    <>
-      <div>{comments}</div>
-    </>
+    <div>
+      <h2>Comments:</h2>
+      <div>User: {currentUser}</div>
+      {comments}
+    </div>
   );
 }
 

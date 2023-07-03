@@ -11,6 +11,7 @@ function Post() {
   const [post, setPost] = useState({
     content: "",
     Author: "",
+    comment:[]
   });
 
   const name = () => {
@@ -26,7 +27,7 @@ function Post() {
 
   const HandlePostbox = (event) => {
     const value = event.target.value;
-    setPost({ ...post, content: value, Author: username });
+    setPost({ ...post, content: value, Author: username, comment:[]});
   };
 
   const addPostToUser = (user, newPost) => {

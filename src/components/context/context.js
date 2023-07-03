@@ -52,7 +52,7 @@ function Provider({ children }) {
   // get curentUser
   const getCurrent = () => {
     axios.get(`http://localhost:5001/users/${getuserID()}`).then((user) => {
-      setCurrentUser(user.data);
+      setCurrentUser(user.data.name);
     });
   };
 
@@ -88,7 +88,7 @@ const HandelEditPost = (id, newContent) => {
   };
 
   
-  // set post to server
+  // set comments to server
 
   const HandelAddComment = (newComment) => {
     const addNewComment = [...commentArray, newComment];

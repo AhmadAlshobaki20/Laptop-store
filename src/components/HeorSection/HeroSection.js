@@ -5,10 +5,10 @@ function HeroSection(){
     <>
       <main>
         <div className="Welcome-editorial">
-          <h1>Description</h1>
-          <h3>Hello Guy I build my own website by using react Inshallah</h3>
-          <p>Hello Guy I build my own website by using react Inshallah</p>
-          <p>Hello Guy I build my own website by using react Inshallah</p>
+          <h1>Network Shop</h1>
+          <h3>Welcome to our network shop</h3>
+          <p></p>
+          <p></p>
         </div>
         <div className="Hero-image">
         <img src={Image} style={{width:"300px", height:"300px", borderRadius:"8px"}} alt=""/>

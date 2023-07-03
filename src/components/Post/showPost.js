@@ -35,11 +35,11 @@ function ShowPost({ post, id }) {
   // get current username
 
   useEffect(() => {
-    auth();
+    author();
     getCurrentUser();
   }, []);
 
-  const auth = () => {
+  const author = () => {
     axios.get(`http://localhost:5001/Posts/${post.id}`).then((response) => {
       console.log("Auth = ", response.data.Author);
       setUsername(response.data.Author);
@@ -94,8 +94,8 @@ function ShowPost({ post, id }) {
             <div className="ui large transparent left icon input" />
             {showComment ? (
               <>
-                <Comment />
-                <ShowComment />
+                <Comment postId = {id}/>
+                <ShowComment postId = {id}/>
               </>
             ) : null}
           </div>
