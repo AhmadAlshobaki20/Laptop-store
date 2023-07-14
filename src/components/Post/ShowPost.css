@@ -1,47 +1,37 @@
-.posts{
-  display: flex;
-  flex-direction: column;
-  background: black;
-  padding: 10px;
-  align-items: center;
+.PostContainer {
+  padding: 0;
+  width: 50%;
+  margin: 17px auto;
   border: 1px solid black;
-  margin: 0 auto;
-  justify-content: center;
-}
-.text{
+  padding: 10px;
+  background: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
-  /* background: black; */
-  padding: 10px;
-  align-items: center;
-  border-radius: 4px;
-}
-
-/* delete, Edit */
-.actions{
-  display: flex;
-  gap:10px;
-}
-
-#delete:hover{
-  fill: red;
-  color: red;
-}
-#edit{
-  width: 40px;
-  font-weight: 600;
-}
-.ui.card {
-  width: 776px;
+  border-radius: 8px;
 }
 .user-image{
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 1.2rem;
+  gap: 5px;
+  margin-bottom:5px;
 }
-#time-name{
+.post-content{
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 10px;
+  font-size: 1.3rem;  
 }
+
 #form{
   display: flex;
-  flex-direction: column;
+}
+
+#post-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
 }

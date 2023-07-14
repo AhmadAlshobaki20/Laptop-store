@@ -3,28 +3,25 @@
   import ShowPost from "./showPost";
   import "./ListPost.css";
   import axios from "axios";
-  import ShowComment from "./comment/ShowComment";
+  // import ShowComment from "./comment/ShowComment";
   function ListPost() {
-    const { getuserID } = useContext(allData);
-    const [postOfUser, setPostOfUser] = useState([]);
-
+    const {Posts, setpost} = useContext(allData);
     useEffect(() => {
-      userPost();
+      fetchAllPosts();
     }, []);
-    const userPost = () => {
-      axios.get(`http://localhost:5001/Posts`).then((userPosts) => {
-        console.log("userPosts:", userPosts.data);
-        setPostOfUser(userPosts.data);
-      });
+
+    const fetchAllPosts = async() => {
+      const response = await axios.get(`http://localhost:5001/Posts`)
+      setpost(response.data);
     };
 
-    const allposts = postOfUser.map((post) => {
-      return <ShowPost post={post} id={post.id} />;
+    const allPosts = Posts.map((post) => {
+      return <ShowPost key={post.id} post={post}/>;
     });
 
     return (
       <>
-        <div className="Post-List">{allposts}</div>
+        <div className="Post-List">{allPosts}</div>
       </>
     );
   }

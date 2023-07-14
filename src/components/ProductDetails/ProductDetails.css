@@ -2,13 +2,14 @@
   display: flex;
   border: 1px solid rgb(207, 206, 206);
   border-radius: 8px;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   align-items: center;
   margin-bottom: 20px;
 }
+
 #detail h1 {
   font-family: var(--nav-font-family);
   color: var(--logo-color);
@@ -18,4 +19,25 @@
   font-family: var(--nav-font-family);
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.card-img-top{
+  width: 400px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 710px) {
+  .product-details{
+    display: grid;
+  }
+  .card-img-top{
+    width: 200px;
+    height: 200px;
+  }
+}
+#cart-button{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

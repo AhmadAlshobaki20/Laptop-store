@@ -1,19 +1,32 @@
 import { Link } from "react-router-dom";
 import "./PorductListHome.css";
-import { useContext} from "react";
+import { useContext, useEffect, useState } from "react";
 import allData from "../context/context";
+import axios from "axios";
 function ProductListHome() {
-  const { Products } = useContext(allData);
-  const random = Products.splice(0,6,1).map((product) => {
+  const { Products, setProducts } = useContext(allData);
+
+  const random = Products.slice(0, 6).map((product) => {
     return (
       <>
-        <div className="product" key={product.id}>
-          <img src={product.image} id="product-image" alt="" />
-          <div className="desc-price">
-            <span id="description">Brand:{product.brand}</span>
-            <h5 id="description">Brand:{product.name}</h5>
-            <h3 className="Price">Price:{product.price}</h3>
-            <Link to={`product/productDetails/${product.id}`} id="detail-btn">
+        <div class="ui card">
+          <div class="image">
+            <img src={product.image} id="img" alt="." />
+          </div>
+          <div class="content">
+            <a class="header" href="..">
+              Name:{product.name}
+            </a>
+            <div class="meta">
+              <span class="date">Brand:{product.brand}</span>
+            </div>
+            <div class="description">Desc:{product.description}</div>
+            <div className="price">
+              <h1 style={{ color: "orange" }}>{product.price}</h1>
+            </div>
+          </div>
+          <div class="extra content">
+            <Link to={`productDetails/${product.id}`} id="detail-btn">
               Details
             </Link>
           </div>

@@ -7,7 +7,7 @@ function HeroSection(){
         <div className="Welcome-editorial">
           <h1>Network Shop</h1>
           <h3>Welcome to our network shop</h3>
-          <p></p>
+          <p>Welcome to our editorial network shop! We are delighted to present a wide range of curated products and services designed to meet your editorial needs. </p>
           <p></p>
         </div>
         <div className="Hero-image">

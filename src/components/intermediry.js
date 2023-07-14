@@ -17,6 +17,7 @@ import Comment from "./Post/comment/comment";
 import ListPost from "./Post/ListPost";
 import ShowPost from './Post/showPost';
 import ProductDetails from './ProductDetails/ProductDetails';
+import Cart from "./cart/cart";
 export {
   Nav,
   Footer,
@@ -36,5 +37,6 @@ export {
   ListPost,
   Comment,
   ShowPost,
-  ProductDetails
+  ProductDetails,
+  Cart
 };

@@ -16,6 +16,8 @@ main{
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding: 0 30px;
+  font-weight: 600;
 }
 .Welcome-editorial h1{
   font-size: 3rem;
@@ -25,4 +27,5 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 10px;
 }

@@ -1,37 +1,39 @@
 import { useContext, useEffect, useState } from "react";
 import allData from "../../context/context";
 import axios from "axios";
+import avatar from "../../../assets/matthew.png";
 
 function ShowComment({ postId }) {
-  const { currentUser } = useContext(allData);
-  const [postComments, setPostComments] = useState([]);
+  const { getuserID, commentArray, setCommentArray } = useContext(allData);
+  const [name, setName] = useState("")
 
   useEffect(() => {
-    getPostComments();
+    getComments();
   }, []);
 
-  const getPostComments = () => {
-    axios.get(`http://localhost:5001/Posts/${postId}`).then((response) => {
-      setPostComments(response.data.comment);
-    });
+  const getComments = async () => {
+    const response = await axios.get(`http://localhost:5001/posts/${postId}`);
+    setCommentArray(response.data.comment);
   };
 
-  const comments = postComments.map((comment, index) => {
-    return (
-      <div key={index}>
-        <div>User: {comment.user}</div>
-        <div>Content: {comment.content}</div>
-      </div>
-    );
+
+  const comments = commentArray.map((comment) => {
+    if (postId === comment.postId) {
+      return (
+        <>
+          <div className="commentContainer" key={comment.id}>
+            <div className="imageAndUser">
+              <img src={avatar} alt=".." id="user-comment" />
+              <span id="username">{comment.user}</span>
+            </div>
+            <div>{comment.content}</div>
+          </div>
+        </>
+      );
+    }
   });
 
-  return (
-    <div>
-      <h2>Comments:</h2>
-      <div>User:{currentUser}</div>
-      {comments}
-    </div>
-  );
+  return <div>{comments}</div>;
 }
 
 export default ShowComment;

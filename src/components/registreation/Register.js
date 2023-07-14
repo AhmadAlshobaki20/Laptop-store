@@ -20,12 +20,11 @@ function Register() {
     phone: "",
     name: "",
     gender: "",
-    posts: [],
-    comments: [],
-    feedback: []
+    cartproduct: [],
+    History: [],
   });
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
 
@@ -38,7 +37,7 @@ function Register() {
     event.preventDefault();
     if (validateForm()) {
       checkValues();
-      navigate('/login');
+      navigate("/login");
     }
   };
 
@@ -70,7 +69,7 @@ function Register() {
     }
   };
 
-  // form validation 
+  // form validation
   const validateForm = () => {
     const { email, name, password, confirmPassword, phone, gender } =
       newAccount;
@@ -139,7 +138,9 @@ function Register() {
                 name="name"
                 value={newAccount.name}
               />
-              {errors.nameError && <div className="errors">{errors.nameError}*</div>}
+              {errors.nameError && (
+                <div className="errors">{errors.nameError}*</div>
+              )}
 
               <select
                 onChange={handleInputChange}
@@ -150,7 +151,9 @@ function Register() {
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
-              {errors.genderError && <div className="errors">{errors.genderError}*</div>}
+              {errors.genderError && (
+                <div className="errors">{errors.genderError}*</div>
+              )}
 
               <input
                 type="password"
@@ -160,7 +163,9 @@ function Register() {
                 value={newAccount.password}
                 autoComplete="off"
               />
-              {errors.passwordError && <div className="errors">{errors.passwordError}*</div>}
+              {errors.passwordError && (
+                <div className="errors">{errors.passwordError}*</div>
+              )}
             </div>
             <div className="email-phone-confirm">
               <input
@@ -170,8 +175,12 @@ function Register() {
                 name="email"
                 value={newAccount.email}
               />
-              {errors.alreadyEmailError && <div className="errors">email Already exist*</div>}
-              {errors.emailError && <div className="errors">{errors.emailError}*</div>}
+              {errors.alreadyEmailError && (
+                <div className="errors">email Already exist*</div>
+              )}
+              {errors.emailError && (
+                <div className="errors">{errors.emailError}*</div>
+              )}
 
               <input
                 type="phone"
@@ -180,7 +189,9 @@ function Register() {
                 name="phone"
                 value={newAccount.phone}
               />
-              {errors.phoneError && <div className="errors">{errors.phoneError}*</div>}
+              {errors.phoneError && (
+                <div className="errors">{errors.phoneError}*</div>
+              )}
 
               <input
                 type="password"

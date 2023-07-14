@@ -4,6 +4,7 @@ import {
   ProductListHome,
   Reputation,
   HeroSection,
+  Cart,
 } from "../intermediry";
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
       <Reputation />
       <AboutUs />
       <ProductListHome />
-      <FeedBack /> 
+      <FeedBack />
     </>
   );
 }

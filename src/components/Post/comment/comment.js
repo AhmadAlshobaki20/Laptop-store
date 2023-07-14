@@ -1,68 +1,68 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, getuserID } from "react";
 import allData from "../../context/context";
 import axios from "axios";
-
+import "./comment.css";
 function Comment({ postId }) {
   const [comment, setComment] = useState({
     user: "",
     content: "",
   });
 
-  const [getpost, setGetPost] = useState({ comment: [] });
+  // const [getpost, setGetPost] = useState({ comment: [] });
+  const [username, setUsername] = useState("");
+  const { commentArray, setCommentArray, getuserID } = useContext(allData);
 
-  const { HandelAddComment, currentUser } = useContext(allData);
-
-  const handleCommentChange = (event) => {
-    setComment({ ...comment, content: event.target.value });
+  const name = async () => {
+    const response = await axios.get(
+      `http://localhost:5001/users/${getuserID()}`
+    );
+    console.log("name = ", response.data.name);
+    setUsername(response.data.name);
   };
 
-  useEffect(() => {
-    getAllpost();
-  }, []);
+  useEffect(() => {}, []);
 
-  const getAllpost = () => {
-    axios.get(`http://localhost:5001/posts/${postId}`).then((response) => {
-      setGetPost(response.data);
+  console.log(username);
+  const handleCommentChange = (event) => {
+    setComment({
+      ...comment,
+      user: username,
+      content: event.target.value,
+      postId: postId,
     });
   };
 
-  const postComment = () => {
-    const updatedComment = [...getpost.comment, comment];
-
-    axios
-      .put(`http://localhost:5001/posts/${postId}`, {
-        ...getpost,
-        comment: updatedComment,
-      })
-      .then((response) => {
-        console.log("Comment added successfully!");
-        setComment({ ...comment, content: "" }); // Clear the comment input field
-        setGetPost(response.data); // Update the getpost state with the updated post
-      })
-      .catch((error) => {
-        console.error("Error adding comment:", error);
-      });
+  const HandleAddComment = async () => {
+    const response = await axios.patch(
+      `http://localhost:5001/posts/${postId}`,
+      {
+        comment: [...commentArray, comment],
+      }
+    );
+    console.log(response.data);
+    setCommentArray(response.data.comment);
   };
+  console.log(commentArray);
 
   const handleCommentSubmit = (event) => {
-    event.preventDefault();
-    HandelAddComment(comment);
-    postComment();
+    console.log(comment);
   };
 
   return (
     <div className="comment">
-      <form id="form" onSubmit={handleCommentSubmit}>
-        <input
-          type="text"
-          placeholder="Add new comment"
-          value={comment.content}
-          onChange={handleCommentChange}
-        />
-        <button type="submit">Add</button>
-      </form>
+      <input
+        onChange={handleCommentChange}
+        id="comment-field"
+        placeholder="Add your comment"
+      />
+      <i
+        class="fa-solid fa-square-plus fa-xl"
+        onClick={() => {
+          name();
+          HandleAddComment();
+        }}
+      ></i>
     </div>
   );
 }
-
 export default Comment;

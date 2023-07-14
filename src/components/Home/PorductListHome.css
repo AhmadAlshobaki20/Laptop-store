@@ -39,3 +39,10 @@ section{
   color: var(--login-color);
   cursor: pointer;
 }
+#img {
+  width: 270px;
+  height: 234px;
+}
+.ui.card {
+  width: 271px;
+}

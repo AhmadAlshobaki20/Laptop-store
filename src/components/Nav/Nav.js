@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import "./Nav.css";
-import {useContext } from "react";
+import { useContext } from "react";
 import allData from "../context/context";
 
 function Nav() {
@@ -10,7 +10,7 @@ function Nav() {
 
   let userId = getuserID();
 
-  console.log("HashLink",HashLink)
+  console.log("HashLink", HashLink);
 
   const navigationHome = () => {
     if (userId >= 1) {
@@ -27,14 +27,21 @@ function Nav() {
     }
   };
 
-  const navigateAbout = ()=>{
-    if(userId >= 1){
-      return `${userId}/#About`
-    }else{
-      return `/#About`
+  const navigateAbout = () => {
+    if (userId >= 1) {
+      return `${userId}/#About`;
+    } else {
+      return `/#About`;
     }
-  }
+  };
 
+  const navigateToProductDetails = () => {
+    if (userId >= 1) {
+      return `${userId}/product/productDetails`;
+    } else {
+      return "/product/productDetails";
+    }
+  };
   return (
     <header>
       <div>
@@ -79,6 +86,11 @@ function Nav() {
       <div className="third-section">
         {userId >= 1 ? (
           <>
+            <Link
+              to={`/${getuserID()}/cart`}
+              class="fa-sharp fa-solid fa-cart-plus fa-2xl"
+            ></Link>
+
             <Link to={`/${getuserID()}/profile`} className="profile"></Link>
             <Link to={"/"} className="login">
               Logout

@@ -1,3 +1,4 @@
+// import Cart from "./components/cart/cart";
 import {
   Home,
   Product,
@@ -6,6 +7,7 @@ import {
   Footer,
   Register,
   Profile,
+  Cart,
   Community,
   ProductDetails,
 } from "./components/intermediry";
@@ -24,10 +26,16 @@ function App() {
         <Route path="/:userId/profile" element={<Profile />}></Route>
         <Route path="/Register" element={<Register />}></Route>
         <Route
-          path="product/productDetails/:productID"
+          path="/product/productDetails/:productID"
           element={<ProductDetails />}
         />
+        <Route
+          path="/:userId/product/productDetails/:productID"
+          element={<ProductDetails />}
+        />
+        <Route path="/:userId/cart" element={<Cart />} />
       </Routes>
+
       <Footer />
     </>
   );
